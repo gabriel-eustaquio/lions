@@ -1,0 +1,11 @@
+.form input {
+  padding-left: var(--padding-040);
+}
+
+.search {
+  position: relative;
+  left: -240px;
+  top: 2px;
+  z-index: 0;
+  color: var(--cor-b8);
+}

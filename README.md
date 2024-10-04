@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+O que baixar para rodar o projeto localmente ?
 
-## Getting Started
+- Vs code
+- Node.js
+- Git
 
-First, run the development server:
+1 etapa:
+Crie uma pasta vazia no seu computador com o nome que desejar, em seguida abra essa pasta no vs code e abra o terminal integrado usando o bash. Digite: git clone https://github.com/gabriel-eustaquio/lions.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2 etapa:
+certifique que no bash está dentro da pasta do projeto. Digite: npm install e em seguida npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3 etapa
+será disponibilizado um link para visualizar o projeto provavelmente em http://lcoalhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Quais tecnologias utilizei ?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+React com Typescript + Next.js
 
-## Learn More
+Antes do desenvolvimento do site, fiz um protótipo no figma. (UI Design) Confira em: https://www.figma.com/design/0VmaLEBMw5OKVJU0geGASo/Untitled?node-id=0-1&t=HaEJp9ThPRTCf9kN-1
 
-To learn more about Next.js, take a look at the following resources:
+## Decidi utilizar as tecnologias acima pois fiz uso de rotas dinâmicas para o campo de busca (search bar). Código está separado em componentes para fácil reutilização de código e manutenção.
+## Criei uma api para retornar dados ao meu frontend e utilizar no search bar.
+# O site funciona tanto no computador quanto no celular (Responsivo). 
+Implementei animação (apenas na parte principal/main) e inclui também tema dark.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="./public/imagens/lions.png">
+ 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

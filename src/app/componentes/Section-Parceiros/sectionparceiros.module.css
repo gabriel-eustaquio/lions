@@ -1,0 +1,115 @@
+.parceiros {
+  padding: var(--padding-080) 0px;
+}
+
+.parceiros h1:first-child {
+  text-align: center;
+  font-size: 2.875rem;
+  line-height: 3.5rem;
+  max-width: 75ch;
+  margin-bottom: var(--espaco-012);
+}
+
+.parceiros p {
+  text-align: center;
+  font-size: 1.313rem;
+  line-height: 2rem;
+  margin-bottom: var(--espaco-012);
+}
+
+.parceiros div {
+  background-image: url("../../../../public/imagens/parceiros.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15rem 0px;
+  background-size: contain;
+  margin-bottom: var(--espaco-060);
+}
+
+.parceiros ul {
+  position: relative;
+}
+
+.parceiros ul li {
+  background-color: var(--cor-p7);
+  padding: var(--padding-008);
+  color: var(--cor-b1);
+  border-radius: var(--radius-004);
+}
+
+.parceiros ul li:first-child {
+  position: absolute;
+  right: 0px;
+  padding: var(--padding-016) var(--padding-080);
+}
+
+.parceiros ul li:last-child {
+  position: absolute;
+  left: 0px;
+  bottom: -240px;
+  padding: var(--padding-016) var(--padding-080);
+}
+
+.parceiros ul li span {
+  display: block;
+}
+
+.parceiros h1:last-child {
+  text-align: center;
+  font-size: 2.875rem;
+  line-height: 3.5rem;
+  max-width: 75ch;
+  color: var(--cor-p7);
+}
+
+@media (max-width: 1200px) {
+  .parceiros {
+    padding: var(--padding-040) var(--padding-012);
+  }
+  
+  .parceiros h1:first-child {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    max-width: 75ch;
+    margin-bottom: var(--espaco-012);
+  }
+
+  .parceiros p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: var(--espaco-012);
+  }
+
+  .parceiros div {
+    background-position: top;
+    margin-bottom: var(--espaco-012);
+    padding-top: 15rem;
+    padding-bottom: var(--padding-040);
+  }
+
+  .parceiros ul {
+    display: grid;
+    gap: var(--espaco-004);
+  }
+  
+  .parceiros ul li:first-child {
+    position: static;
+    padding: var(--padding-016) var(--padding-040);
+    text-align: center;
+  }
+  
+  .parceiros ul li:last-child {
+    position: static;
+    padding: var(--padding-016) var(--padding-040);
+    text-align: center;
+  }
+  
+  .parceiros ul li span {
+    display: inline-block;
+  }
+  
+  .parceiros h1:last-child {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+}

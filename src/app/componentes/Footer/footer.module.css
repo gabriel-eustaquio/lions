@@ -1,0 +1,13 @@
+.footerBg {
+  background-color: var(--cor-p7);
+}
+
+.footer {
+  color: var(--cor-b1);
+  padding: var(--padding-120);
+}
+
+.footer span {
+  text-align: center;
+  display: block;
+}

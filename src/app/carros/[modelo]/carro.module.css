@@ -1,0 +1,22 @@
+.carro {
+  padding-top: var(--espaco-160);
+  padding-bottom: calc(var(--espaco-160) * 3);
+  padding-left: var(--padding-012);
+  padding-right: var(--padding-012);
+}
+
+.carro div {
+  background-color: var(--cor-b4);
+  margin-bottom: var(--espaco-020);
+  padding: var(--padding-012);
+  color: var(--cor-b8);
+}
+
+.carro a {
+  background-color: var(--cor-p7);
+  color: var(--cor-b1);
+  padding: var(--padding-008-016);
+  text-transform: uppercase;
+  border-radius: var(--radius-004);
+  display: inline-block;
+}
