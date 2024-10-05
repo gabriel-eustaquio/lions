@@ -21,7 +21,7 @@ Antes do desenvolvimento do site, fiz um protótipo no figma. (UI Design) Confir
 
 ## Decidi utilizar as tecnologias acima pois fiz uso de rotas dinâmicas para o campo de busca (search bar). Código está separado em componentes para fácil reutilização de código e manutenção.
 
-## Criei uma api para retornar dados ao meu frontend e utilizar no search bar.
+## Simulei uma api para retornar dados ao meu frontend e utilizar no search bar.
 
 # O site funciona tanto no computador quanto no celular (Responsivo).
 

@@ -72,15 +72,6 @@ export default function SearchBar() {
     string[] | null
   >(null);
 
-  // React.useEffect(() => {
-  //   async function fetchData() {
-  //     const response = await fetch('http://localhost:3000/api/carros');
-  //     const apiCarros = (await response.json()) as ApiCarros;
-  //     setApiCarros(apiCarros);
-  //   }
-  //   fetchData();
-  // }, []);
-
   React.useEffect(() => {
     if (search && apiCarros) {
       setApiCarrosFiltrada(
