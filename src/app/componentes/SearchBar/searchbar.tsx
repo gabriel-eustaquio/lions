@@ -62,6 +62,7 @@ export default function SearchBar() {
       'X3',
       'X5',
       'X8',
+      'X7',
       'Yaris',
       'Yeti',
       'Zafira',
