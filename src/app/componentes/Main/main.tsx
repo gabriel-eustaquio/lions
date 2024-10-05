@@ -1,12 +1,13 @@
 'use client';
 import styles from '@/app/componentes/Main/main.module.css';
-import { TemaContexto } from '@/app/layout';
+import { useTemaContext } from '../TemaProvider/temaprovider';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Main() {
-  const temaContexto = React.useContext(TemaContexto);
+  const temaContexto = useTemaContext();
+
   const variants = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },

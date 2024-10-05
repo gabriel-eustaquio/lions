@@ -1,6 +1,6 @@
 'use client';
 import styles from '@/app/carros/[modelo]/carro.module.css';
-import { TemaContexto } from '@/app/layout';
+import { useTemaContext } from '@/app/componentes/TemaProvider/temaprovider';
 import React from 'react';
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function CarroPage(props: Props) {
-  const temaContexto = React.useContext(TemaContexto);
+  const temaContexto = useTemaContext();
 
   return (
     <div

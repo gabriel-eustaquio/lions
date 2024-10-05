@@ -1,10 +1,10 @@
 'use client';
 import React, { forwardRef } from 'react';
 import styles from '@/app/componentes/Section-Parceiros/sectionparceiros.module.css';
-import { TemaContexto } from '@/app/layout';
+import { useTemaContext } from '../TemaProvider/temaprovider';
 
 export default forwardRef<HTMLElement>(function SectionParceiros({}, ref) {
-  const temaContexto = React.useContext(TemaContexto);
+  const temaContexto = useTemaContext();
 
   return (
     <div

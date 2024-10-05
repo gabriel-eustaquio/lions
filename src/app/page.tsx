@@ -3,10 +3,10 @@ import Main from './componentes/Main/main';
 import SectionParceiros from './componentes/Section-Parceiros/sectionparceiros';
 import SectionCategorias from './componentes/Section-Categorias/sectioncategorias';
 import React from 'react';
-import { SectionsContexto } from './layout';
+import { useSectionContext } from './componentes/SectionProvider/sectionprovider';
 
 export default function HomePage() {
-  const sectionsContexto = React.useContext(SectionsContexto);
+  const sectionsContexto = useSectionContext();
   return (
     <>
       <Main />

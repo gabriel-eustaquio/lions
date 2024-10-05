@@ -3,16 +3,14 @@ import Image from 'next/image';
 import styles from '@/app/componentes/Header/header.module.css';
 import SearchBar from '@/app/componentes/SearchBar/searchbar';
 import React from 'react';
-import { TemaContexto } from '@/app/layout';
+import { useSectionContext } from '../SectionProvider/sectionprovider';
+import { useTemaContext } from '../TemaProvider/temaprovider';
 
-type HeaderProps = {
-  categorias: React.MutableRefObject<HTMLElement | null>;
-  parceiros: React.MutableRefObject<HTMLElement | null>;
-};
-
-export default function Header(props: HeaderProps) {
+export default function Header() {
   const [menu, setMenu] = React.useState(false);
-  const temaContexto = React.useContext(TemaContexto);
+  const temaContexto = useTemaContext();
+
+  const sectionsContexto = useSectionContext();
 
   return (
     <div
@@ -45,7 +43,7 @@ export default function Header(props: HeaderProps) {
             <a
               onClick={() => {
                 setMenu(false);
-                props.parceiros.current?.scrollIntoView({
+                sectionsContexto.sectionParceirosRef.current?.scrollIntoView({
                   behavior: 'smooth',
                   block: 'start',
                 });
@@ -58,7 +56,7 @@ export default function Header(props: HeaderProps) {
             <a
               onClick={() => {
                 setMenu(false);
-                props.categorias.current?.scrollIntoView({
+                sectionsContexto.sectionCategoriasRef.current?.scrollIntoView({
                   behavior: 'smooth',
                   block: 'start',
                 });

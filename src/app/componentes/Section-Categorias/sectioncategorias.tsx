@@ -1,11 +1,11 @@
 'use client';
 import styles from '@/app/componentes/Section-Categorias/sectioncategorias.module.css';
-import { TemaContexto } from '@/app/layout';
+import { useTemaContext } from '../TemaProvider/temaprovider';
 import Image from 'next/image';
 import React, { forwardRef } from 'react';
 
 export default forwardRef<HTMLElement>(function SectionCategorias({}, ref) {
-  const temaContexto = React.useContext(TemaContexto);
+  const temaContexto = useTemaContext();
 
   return (
     <section
