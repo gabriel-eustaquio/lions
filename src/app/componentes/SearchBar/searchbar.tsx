@@ -9,19 +9,77 @@ type ApiCarros = {
 
 export default function SearchBar() {
   const [search, setSearch] = React.useState('');
-  const [apiCarros, setApiCarros] = React.useState<ApiCarros | null>(null);
+  const [apiCarros] = React.useState<ApiCarros | null>({
+    modelos: [
+      'Audi',
+      'Argo',
+      'Bmw',
+      'Bonnie',
+      'Civic',
+      'Celta',
+      'Corolla',
+      'Duster',
+      'Doblo',
+      'EcoSport',
+      'Elantra',
+      'Fiesta',
+      'Fit',
+      'Gol',
+      'GrandSiena',
+      'Hb20',
+      'HR-V',
+      'Ioniq',
+      'Iluminado',
+      'Jetta',
+      'JacT40',
+      'Kicks',
+      'Ka',
+      'L200Triton',
+      'Logan',
+      'Mobi',
+      'Montana',
+      'NissanLeaf',
+      'Nivus',
+      'Onix',
+      'Opala',
+      'Polo',
+      'Palio',
+      'Prisma',
+      'Q3',
+      'Q5',
+      'Renegade',
+      'Ranger',
+      'Spin',
+      'Sandero',
+      'Tracker',
+      'T-Cross',
+      'Up!',
+      'Uno',
+      'Virtus',
+      'Versa',
+      'Wrangler',
+      'WagonR',
+      'X3',
+      'X5',
+      'X8',
+      'Yaris',
+      'Yeti',
+      'Zafira',
+      'Zoe',
+    ],
+  });
   const [apiCarrosFiltrada, setApiCarrosFiltrada] = React.useState<
     string[] | null
   >(null);
 
-  React.useEffect(() => {
-    async function fetchData() {
-      const response = await fetch('http://localhost:3000/api/carros');
-      const apiCarros = (await response.json()) as ApiCarros;
-      setApiCarros(apiCarros);
-    }
-    fetchData();
-  }, []);
+  // React.useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await fetch('http://localhost:3000/api/carros');
+  //     const apiCarros = (await response.json()) as ApiCarros;
+  //     setApiCarros(apiCarros);
+  //   }
+  //   fetchData();
+  // }, []);
 
   React.useEffect(() => {
     if (search && apiCarros) {
