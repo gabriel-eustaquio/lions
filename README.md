@@ -13,6 +13,9 @@ certifique que no bash está dentro da pasta do projeto. Digite: npm install e e
 3 etapa
 será disponibilizado um link para visualizar o projeto provavelmente em http://lcoalhost:3000
 
+LEIA:
+Caso não queira rodar localmente, poderá acessar o link: https://lions-brown.vercel.app/
+
 # Quais tecnologias utilizei ?
 
 React com Typescript + Next.js
