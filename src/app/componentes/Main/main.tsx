@@ -30,7 +30,12 @@ export default function Main() {
           <h1>
             Fature muito com a melhor concessionária de seminovos do Brasil
           </h1>
-          <p>
+          <p
+            style={{
+              backgroundColor: temaContexto?.dark ? 'var(--cor-b7)' : '',
+              color: temaContexto?.dark ? 'var(--cor-b1)' : '',
+            }}
+          >
             Um portal pensado exclusivamente em quem deseja crescer junto com a
             Lions Seminovos a rede que mais cresce no Brasil
           </p>

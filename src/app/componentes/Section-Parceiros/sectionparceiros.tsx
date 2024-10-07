@@ -22,7 +22,12 @@ export default forwardRef<HTMLElement>(function SectionParceiros({}, ref) {
           Nossos parceiros possuem todo suporte necessário para alcançar o
           sucesso nas vendas
         </h1>
-        <p>
+        <p
+          style={{
+            backgroundColor: temaContexto?.dark ? 'var(--cor-b7)' : '',
+            color: temaContexto?.dark ? 'var(--cor-b1)' : '',
+          }}
+        >
           Contamos com uma equipe totalmente especializada em vendas que
           acompanhará cada etapa para a realização de sua venda.
         </p>
